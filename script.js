@@ -24,3 +24,16 @@ form.addEventListener("submit", function(event) {
     form.submit(); //envia a mensagem caso todas as validaçoes tenham sido realizadas com sucesso
 
 });
+
+// adiciona funcionalidade de tema claro/escuro no corpo da página
+const botaoClaroEscuro = document.getElementById("claro-escuro");
+botaoClaroEscuro.addEventListener("click", function () {
+
+    document.body.classList.toggle("dark-mode"); // adiciona/remove a classe "dark-mode" aos elementos dentro de body
+
+    if(document.body.classList.contains("dark-mode")) {
+        botaoClaroEscuro.textContent = " ☀️ Tema claro";
+    } else {
+        botaoClaroEscuro.textContent = " 🌙 Tema escuro";
+    }
+});
