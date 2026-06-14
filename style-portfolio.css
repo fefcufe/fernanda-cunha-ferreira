@@ -100,6 +100,73 @@ body {
     padding-bottom: 20px;
 }
 
+#formulario-contato {
+    width: 60%;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    font-family: 'Raleway', sans-serif;
+}
+
+#titulo-formulario {
+    background-color: rgb(203, 192, 211);
+    border-radius: 20px;
+}
+
+#formulario-contato label p {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+#formulario-contato label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+#formulario-contato input[type="text"],
+#formulario-contato input[type="email"],
+#formulario-contato textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+#formulario-contato input:focus,
+#formulario-contato textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(26, 4, 4, 0.295);
+    transform: scale(1.01);
+}
+
+#formulario-contato textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+#formulario-contato input[type="submit"] {
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #4a4e69;
+    color: white;
+    transition: all 0.3s ease;
+}
+
 .dark-mode {
     background-color: black;
     color:antiquewhite
@@ -108,6 +175,14 @@ body {
 .dark-mode #nav,
 .dark-mode #fotoPortfolio {
     background-color: #1f1f1f;
+}
+
+.dark-mode #formulario-contato {
+    box-shadow: 0 8px 25px rgba(247, 244, 244, 0.884);
+}
+
+.dark-mode #titulo-formulario {
+    background-color: black;
 }
 
 
@@ -126,4 +201,14 @@ body {
     background-color: #333;
     color:antiquewhite;
     border: 1px solid #666;
+}
+
+.dark-mode #formulario-contato input:focus,
+.dark-mode #formulario-contato textarea:focus {
+    box-shadow: 0 0 8px rgba(255,255,255,0.8);
+}
+
+.dark-mode #formulario-contato input[type="submit"] {
+    background-color: #d3cada;
+    color: rgb(22, 3, 3);
 }
