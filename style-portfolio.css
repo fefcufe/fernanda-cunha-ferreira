@@ -87,7 +87,7 @@ body {
     padding: 0;
 }
 
-#aboutMe {
+#sobreMim {
     margin-top: 50px;
     border-radius: 25px;
     border: 2px solid black;
@@ -99,3 +99,4 @@ body {
     margin-right: auto;
     padding-bottom: 20px;
 }
+
