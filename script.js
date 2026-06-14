@@ -37,3 +37,4 @@ botaoClaroEscuro.addEventListener("click", function () {
         botaoClaroEscuro.textContent = " 🌙 Tema escuro";
     }
 });
+

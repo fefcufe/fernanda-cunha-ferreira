@@ -173,6 +173,28 @@ body {
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
+#claro-escuro {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    z-index: 1000;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 30px;
+    background-color: white;
+    color: #4a4e69;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+#claro-escuro:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
 .dark-mode {
     background-color: black;
     color:antiquewhite
@@ -223,4 +245,10 @@ body {
     background-color: #ebebf3;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(195, 195, 202, 0.459);
+}
+
+.dark-mode #claro-escuro {
+    background-color: #d3cada;
+    color: rgb(22, 3, 3);
+    box-shadow: 0 4px 12px rgba(255,255,255,0.1);
 }
