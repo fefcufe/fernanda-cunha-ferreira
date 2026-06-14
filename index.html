@@ -31,7 +31,7 @@
             <li><a href="#formacao">Formação</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href='#contact'>Contato</a></li>
-            <li>Projects</li>
+            <li><a href="#projetos">Projetos</a></li>
         </ul>
     </nav>
 <main>
@@ -71,9 +71,9 @@
                 </ul>
         </section>
 
-        <section class="habilidades-secao">
+        <section class="section" >
             <em><h3> Habilidades </h3></em>
-            <ul>
+            <ul class='list' id="habilidades">
                 <li>Git e GitHub</li>
                 <li>Lógica de Programação</li>
                 <li>HTML5</li>
@@ -97,15 +97,51 @@
     <hr>
     <br><br>
 
+    <section class="section" >
+            <em><h3> Projetos </h3></em>
+            <ul class='list' id="projetos">
+                <li><a href="https://github.com/fefcufe/Project-Recipes-App" target="_blank"> Aplicativo de Receitas</a></li>
+                <li><a href="https://github.com/fefcufe/Project-FrontEnd-Online-Store" target="_blank"> Loja Online (front-end)</a></li>
+                <li><a href="https://github.com/fefcufe/Project-Delivery-App" target="_blank">Aplicativo de delivery (back-end)</a></li>
+            </ul>
+    </section>
+
+    <br><br>
+    <hr>
+    <br><br>
+
     <section class="section" id='contact'>
         <em><h3 class="topics">Contato</h3></em>
             <ul class="list">
             <li><a href="https://www.linkedin.com/in/fefcufe/" target="_blank">Linkedin</a></li>
             <li> <a href='https://github.com/fefcufe' target="_blank">GitHub</a></li>
             <li><a href='https://www.instagram.com/fefcufe/' target="_blank">Instagram</a></li>
+            </ul>
+
+            <p>Não encontrou o que queria? Me mande uma mensagem!</p>
+        <form>
+
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name" required>
+            
+                <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+                <br><br>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+
+                <br><br>
+                
+                <input type="submit" value="Enviar">
+        </form>
+
     </section> 
     <br>
     
-    
+<script src="script.js"></script>  
 </body>
 </html>

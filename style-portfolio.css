@@ -23,7 +23,7 @@ h1 {
     border-radius: 100%;
     margin-left:100px;
     margin-right:200px ;
-    width=300px 
+    width:300px ;
     padding: 20px;
     background-color: rgb(142, 154, 175);
     
@@ -31,7 +31,7 @@ h1 {
 }
 
 #photo-and-aboutMe {
-    display:flex
+    display:flex;
     text-align: center;
     justify-content: center;
     align-items: center;
