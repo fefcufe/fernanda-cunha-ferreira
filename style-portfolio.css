@@ -100,3 +100,30 @@ body {
     padding-bottom: 20px;
 }
 
+.dark-mode {
+    background-color: black;
+    color:antiquewhite
+}
+
+.dark-mode #nav,
+.dark-mode #fotoPortfolio {
+    background-color: #1f1f1f;
+}
+
+
+.dark-mode p,
+.dark-mode .list,
+.dark-mode #sobreMim {
+    background-color: #1f1f1f;
+}
+
+.dark-mode a {
+    color: #87cefa;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    background-color: #333;
+    color:antiquewhite;
+    border: 1px solid #666;
+}
