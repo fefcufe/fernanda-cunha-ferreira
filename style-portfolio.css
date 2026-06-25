@@ -23,7 +23,7 @@ h1 {
     border-radius: 100%;
     margin-left:100px;
     margin-right:200px ;
-    width=300px 
+    width:300px ;
     padding: 20px;
     background-color: rgb(142, 154, 175);
     
@@ -31,7 +31,7 @@ h1 {
 }
 
 #photo-and-aboutMe {
-    display:flex
+    display:flex;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -73,7 +73,7 @@ li {
     list-style-type: none;
 }
 
-#skills-list li:nth-of-type(odd) {
+#habilidades li:nth-of-type(odd) {
     font-style:italic;
     font-weight: bold;
 }
@@ -87,7 +87,7 @@ body {
     padding: 0;
 }
 
-#aboutMe {
+#sobreMim {
     margin-top: 50px;
     border-radius: 25px;
     border: 2px solid black;
@@ -98,4 +98,157 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 20px;
+}
+
+#formulario-contato {
+    width: 60%;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    font-family: 'Raleway', sans-serif;
+}
+
+#titulo-formulario {
+    background-color: rgb(203, 192, 211);
+    border-radius: 20px;
+}
+
+#formulario-contato label p {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+#formulario-contato label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+#formulario-contato input[type="text"],
+#formulario-contato input[type="email"],
+#formulario-contato textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+#formulario-contato input:focus,
+#formulario-contato textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(26, 4, 4, 0.295);
+    transform: scale(1.01);
+}
+
+#formulario-contato textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+#formulario-contato input[type="submit"] {
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #4a4e69;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+#formulario-contato input[type="submit"]:hover {
+    background-color: #22223b;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+#claro-escuro {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    z-index: 1000;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 30px;
+    background-color: white;
+    color: #4a4e69;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+#claro-escuro:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.dark-mode {
+    background-color: black;
+    color:antiquewhite
+}
+
+.dark-mode #nav,
+.dark-mode #fotoPortfolio {
+    background-color: #1f1f1f;
+}
+
+.dark-mode #formulario-contato {
+    box-shadow: 0 8px 25px rgba(247, 244, 244, 0.884);
+}
+
+.dark-mode #titulo-formulario {
+    background-color: black;
+}
+
+
+.dark-mode p,
+.dark-mode .list,
+.dark-mode #sobreMim {
+    background-color: #1f1f1f;
+}
+
+.dark-mode a {
+    color: #87cefa;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    background-color: #333;
+    color:antiquewhite;
+    border: 1px solid #666;
+}
+
+.dark-mode #formulario-contato input:focus,
+.dark-mode #formulario-contato textarea:focus {
+    box-shadow: 0 0 8px rgba(255,255,255,0.8);
+}
+
+.dark-mode #formulario-contato input[type="submit"] {
+    background-color: #d3cada;
+    color: rgb(22, 3, 3);
+}
+
+.dark-mode #formulario-contato input[type="submit"]:hover {
+    background-color: #ebebf3;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(195, 195, 202, 0.459);
+}
+
+.dark-mode #claro-escuro {
+    background-color: #d3cada;
+    color: rgb(22, 3, 3);
+    box-shadow: 0 4px 12px rgba(255,255,255,0.1);
 }
